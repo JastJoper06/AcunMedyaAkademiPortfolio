@@ -1,0 +1,22 @@
+﻿@model List<AcunMedyaAkademiPortfolio.Models.TblFeature>
+@{
+    ViewBag.Title = "CreateFeature";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Öne Çıkanlar Ekleme</h2>
+
+<form method="post">
+    <label>İsimSoyisim</label>
+    <input type="Text" class=" table table-bordered" name="NameSurname" />
+    <label>Açıklama</label>
+    <textarea rows="4" class="table table-bordered" name="Description"></textarea>ü
+    <br />
+    <label>Proje İsmi</label>
+    <input type="Text" class="table table-bordered" name="ProjectName" />
+    <label>Proje Resim Yolu</label>
+    <input type="text" class=" table table-bordered" name="ImageUrl" />
+    <br />
+    <button class="btn btn-info">Projeyi Kaydet</button>
+</form>
+
